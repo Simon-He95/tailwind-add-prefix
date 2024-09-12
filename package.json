@@ -1,18 +1,18 @@
 {
-  "name": "vitesse",
+  "name": "tailwind-add-prefix",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "packageManager": "pnpm@7.33.7",
   "description": "",
   "author": "Simon He",
   "license": "MIT",
   "funding": "https://github.com/sponsors/Simon-He95",
-  "homepage": "https://github.com/Simon-He95/vitesse#readme",
+  "homepage": "https://github.com/Simon-He95/tailwind-add-prefix#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Simon-He95/vitesse.git"
+    "url": "git+https://github.com/Simon-He95/tailwind-add-prefix.git"
   },
-  "bugs": "https://github.com/Simon-He95/vitesse/issues",
+  "bugs": "https://github.com/Simon-He95/tailwind-add-prefix/issues",
   "keywords": [],
   "sideEffects": false,
   "exports": {
@@ -32,9 +32,6 @@
         "./dist/index.d.ts"
       ]
     }
-  },
-  "bin": {
-    "run": "./cli.mjs"
   },
   "files": [
     "dist"
