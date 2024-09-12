@@ -58,7 +58,7 @@ export function createCacheLoadConfig(cwd = process.cwd()) {
         (!workspaceTailwindPackageInfo?.version
         || !workspaceTailwindPackageInfo?.rootPath)
       )
-        return
+        throw new Error('tailwindcss not found, please install it')
 
       isV4 = workspaceTailwindPackageInfo?.version?.startsWith('4') ?? false
       if (!tailwindLibPath) {
@@ -113,7 +113,7 @@ export function createCacheLoadConfig(cwd = process.cwd()) {
       }
       else {
         if (!tailwindConfigPath)
-          return
+          throw new Error('tailwind.config.{js,cjs,mjs,ts} not found')
 
         const { generateRules: generate } = await import(`${tailwindLibPath}/lib/lib/generateRules.js`)
         generateRules = (extracted: string[]) => generate(extracted, tailwindContext)
